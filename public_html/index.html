@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu Restaurante</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css"/>
+        <link rel="icon" type="image/png" href="img/casajuan.ico" />
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body>
+         <header>
+        <div class="cabecera">
+            <img  id="cabecera--logo" class="cabecera--logo" alt="logo" src="img/casajuan.png">
+            <h1>Bar Salas</h1>
+        </div>
+         </header>
+        <div class="imagen">
+            <img  id="imagen--producto" class="imagen--producto" alt="producto seleccionado" src="">
+        </div>
+        <div class="tapas">
+            <h2>Tapas</h2>
+            <div id="calamares" class="tapas">
+               <img  id="tapas--calamares--imagen" class="plato--imagen" alt="calamares" src="img/calamares.png"> 
+               <p><a>Calamares</a><a> 4</a> €</p>
+               <input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/> Seleccionar este producto
+            </div>
+             <div id="montaditos" class="tapas">
+               <img  id="tapas--montaditos--imagen" class="plato--imagen" alt="montaditos" src="img/montadito.png"> 
+               <p><a>Montadito</a><a> 1</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
+            </div>
+             <div id="bravas" class="tapas">
+               <img  id="tapas--bravas--imagen" class="plato--imagen" alt="bravas" src="img/bravas.png"> 
+               <p><a>Patatas Bravas</a><a> 2</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
+            </div>
+        </div>
+        <div class="primero">
+            <h2>Primero</h2>
+            <div id="arroz" class="primero">
+               <img  id="primero--arroz--imagen" class="plato--imagen" alt="arroz" src="img/arroz.png"> 
+               <p><a>Arroz Marinero</a><a> 8</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
+            </div>
+             <div id="espada" class="primero">
+               <img  id="primero--espada--imagen" class="plato--imagen" alt="espada" src="img/pezEspada.jpg"> 
+               <p><a>Pez Espada</a><a> 10</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
+            </div>
+        </div>
+        <div class="postre">
+            <h2>Tapas</h2>
+            <div id="flan" class="postre">
+               <img  id="postre--flan--imagen" class="plato--imagen" alt="flan" src="img/Flan.png"> 
+               <p><a>Flan con Nata</a><a> 1.25</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
+            </div>
+             <div id="tocino" class="postre">
+               <img  id="postre--tocino--imagen" class="plato--imagen" alt="tocino" src="img/tocino.jpg"> 
+               <p><a>Tocino de Cielo</a><a> 1.30</a> € <input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>  
+            </div>
+        </div>
+        <div id="iva" class="iva">
+            <p>Paga IVA  <input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/> 7%</p>
+        </div>
+        <div class="total">
+            <p>Total <a id="totalprecio"></a> €</p>
+        </div>
+    </body>
+</html>
