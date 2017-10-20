@@ -1,66 +1,85 @@
-<!DOCTYPE html>
+
 <html>
     <head>
-        <title>Menu Restaurante</title>
+        <title>Cafe - Lounge</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilo.css"/>
-        <link rel="icon" type="image/png" href="img/casajuan.ico" />
+        <link rel="icon" type="image/png" href="img/images.ico" />
         <script type="text/javascript" src="javascript.js"></script>
     </head>
     <body>
-         <header>
-        <div class="cabecera">
-            <img  id="cabecera--logo" class="cabecera--logo" alt="logo" src="img/casajuan.png">
-            <h1>Bar Salas</h1>
-        </div>
-         </header>
-        <div class="imagen">
-            <img  id="imagen--producto" class="imagen--producto" alt="producto seleccionado" src="">
-        </div>
-        <div class="tapas">
-            <h2>Tapas</h2>
-            <div id="calamares" class="tapas">
-               <img  id="tapas--calamares--imagen" class="plato--imagen" alt="calamares" src="img/calamares.png"> 
-               <p><a>Calamares</a><a> 4</a> €</p>
-               <input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/> Seleccionar este producto
+        <header>
+            <div id="cabecera" class="cabecera">
+                <h1>Cafeteria</h1>
             </div>
-             <div id="montaditos" class="tapas">
-               <img  id="tapas--montaditos--imagen" class="plato--imagen" alt="montaditos" src="img/montadito.png"> 
-               <p><a>Montadito</a><a> 1</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
+            <div class="imagenmuestracontenedor">
+                <img id="imagenmuestra" src="img/.jpg" alt="" class="imagenmuestra"/>
             </div>
-             <div id="bravas" class="tapas">
-               <img  id="tapas--bravas--imagen" class="plato--imagen" alt="bravas" src="img/bravas.png"> 
-               <p><a>Patatas Bravas</a><a> 2</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
+            <div id="comida" class="contenedor">
+                <div id="idTitulo" class="cuadrotitulo">
+                <h2 class="titulo">Comida</h2>
+                </div>
+                <div id="wrap-pollo" class="subcontendor">
+                    <img class="imagen" onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/wrappollo.png" alt="wrap de pollo"/>
+                    <p><input type="checkbox" value="3" name="comprar" id="comprarWrapPollo"/>Wrap de pollo 3 € </p>
+                </div>
+                <div id="wrap-ternera" class="subcontendor">
+                    <img class="imagen"  onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/wrapternera.png" alt="wrap de ternera"/>
+                    <p><input type="checkbox" value="3" name="comprar" id="comprarWrapTernera"/>Wrap de pollo 3 € </p>
+                </div>
+                <div id="hamburguesat" class="subcontendor">
+                    <img class="imagen" onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/burguerternera.png" alt="hamburguesa de ternera"/>
+                    <p><input type="checkbox" value="4" name="comprar" id="comprarHamburguesaTernera"/>Hamburguesa de ternera 4 €</p> 
+                </div>
+                <div id="hamburguesap" class="subcontendor">
+                    <img class="imagen" onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/burguerpollo.png" alt="hamburguesa de pollo"/>
+                    <p><input type="checkbox" value="4" name="comprar" id="comprarHamburguesaPollo"/>Hamburguesa de ternera 4 € </p>
+                </div>
+                 <div id="hamburguesacasa" class="subcontendor">
+                    <img class="imagen" onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/burguerespecial.png" alt="hamburguesa de la casa"/>
+                    <p><input type="checkbox" value="5" name="comprar" id="comprarHamburguesaEspecial"/>Hamburguesa de la casa 5 €</p> 
+                </div>
+                <div id="menu" class="menu">
+                     <input type="checkbox" value="1" name="comprar" id="comprarMenu"/>Hazlo menún con patatas y bebida por solo 1€ más
+                </div>
             </div>
-        </div>
-        <div class="primero">
-            <h2>Primero</h2>
-            <div id="arroz" class="primero">
-               <img  id="primero--arroz--imagen" class="plato--imagen" alt="arroz" src="img/arroz.png"> 
-               <p><a>Arroz Marinero</a><a> 8</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
+            <div id="bebida" class="contenedor">
+                <div  id="idTitulo" class="cuadrotitulo">
+                <h2 class="titulo">Bebida</h2>
+                </div>
+                <div id="agua" class="subcontendor">
+                    <img  class="imagen" onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/agua.png" alt="agua"/>
+                    <p><input type="checkbox" value="1" name="comprar" id="comprarAgua"/>Agua 1€<</p> 
+                </div>
+                <div id="Cola" class="subcontendor">
+                    <img class="imagen"  onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/cola.png" alt="coca-cola"/>
+                    <p><input type="checkbox" value="1" name="comprar" id="comprarCola"/>Coca-Cola 1€</p> 
+                </div>
+                <div id="cerveza" class="subcontendor">
+                    <img class="imagen" onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/cerveza.png" alt="cerveza"/>
+                    <p><input type="checkbox" value="1.5" name="comprar" id="comprarCerveza"/>Cerveza 1.5€</p>
+                </div>
             </div>
-             <div id="espada" class="primero">
-               <img  id="primero--espada--imagen" class="plato--imagen" alt="espada" src="img/pezEspada.jpg"> 
-               <p><a>Pez Espada</a><a> 10</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
+            <div id="batidos" class="contenedor">
+                <div  id="idTitulo" class="cuadrotitulo">
+                <h2 class="titulo">Batidos</h2>
+                </div>
+                <div class="subcontendor" id="batidosoreo">
+                    <img class="imagen" onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/batidooreo.png" alt="batidos de oreo"/>
+                    <p><input type="checkbox" value="3.5" name="comprar" id="comprarOreo"/>Batido de Oreo 3.5€ </p>
+                </div>
+                <div id="batidochips" class="subcontendor">
+                    <img class="imagen" onmouseover="hacerGrande(this) " onmouseout="hacerPequeña(this)" src="img/batidochips.png" alt="batido de chips ajoi"/>
+                    <p><input type="checkbox" value="3.5" name="comprar" id="comprarChipsAjoi"/>Batido de Chips Ajoi 3.5€ </p>
+                </div>
+                
             </div>
-        </div>
-        <div class="postre">
-            <h2>Tapas</h2>
-            <div id="flan" class="postre">
-               <img  id="postre--flan--imagen" class="plato--imagen" alt="flan" src="img/Flan.png"> 
-               <p><a>Flan con Nata</a><a> 1.25</a> €<input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>
-            </div>
-             <div id="tocino" class="postre">
-               <img  id="postre--tocino--imagen" class="plato--imagen" alt="tocino" src="img/tocino.jpg"> 
-               <p><a>Tocino de Cielo</a><a> 1.30</a> € <input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/></p>  
-            </div>
-        </div>
-        <div id="iva" class="iva">
-            <p>Paga IVA  <input type="checkbox" value="seleccionarproducto" name="producto" id="producto"/> 7%</p>
-        </div>
-        <div class="total">
-            <p>Total <a id="totalprecio"></a> €</p>
-        </div>
+            <div id="preciototal" class="preciototal">
+                    <button onclick="calcularPrecio()">Calcular precio total</button>
+                    <p>Precio total <a id="precio">0</a>€</p>
+                    
+                </div>
+        </header>
     </body>
 </html>
